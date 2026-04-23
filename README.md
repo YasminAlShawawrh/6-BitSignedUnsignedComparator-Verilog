@@ -154,11 +154,3 @@ A bug was intentionally introduced at line 44 of the structural comparator — a
    - In the console: `run 700000` (covers all 8192 × 74-unit cycles)
 5. View results in the console log — each line shows PASS or FAIL
 
-### ModelSim / QuestaSim
-
-```bash
-vlog comparatorStructural.v signedOrUnsignedStructural.v \
-     comparatorBehavioral.v tb_comparator.v
-
-vsim tb_comparator -do "run 700000; quit"
-```
